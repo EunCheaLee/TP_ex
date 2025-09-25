@@ -1,0 +1,19 @@
+fastapi
+uvicorn[standard]
+pandas
+numpy
+scikit-learn
+torch
+torchvision
+torchaudio
+konlpy
+mecab-python3
+gensim
+requests
+matplotlib
+seaborn
+transformers
+sentencepiece
+openpyxl
+
+# pip install -r requirements.txt
