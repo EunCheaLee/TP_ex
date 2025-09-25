@@ -1,12 +1,9 @@
-import requests
+from transformers import pipeline
 
-proxies = {
-    "http": None,
-    "https": None
-}
+fill_mask = pipeline("fill-mask",
+                     model="bert-base-uncased",
+                     tokenizer="bert-base-uncased")
 
-response = requests.get("https://stdict.korean.go.kr/api/search.do",
-                        params={"key": "API_KEY", "q": "인사", "req_type": "json"},
-                        proxies=proxies, timeout=5)
-print(response.status_code)
-print(response.text)
+result = fill_mask("인생이란 자신을 [MASK] 것이 아니라 자신을 만드는 것이다.")
+for r in result:
+    print(r["sequence"], r["score"])
