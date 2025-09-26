@@ -27,7 +27,7 @@ def read_root():
 
 
 # 라우트 등록 확인용 - 간단한 테스트 엔드포인트
-@app.get("/test")
+@app.get("korpora_test")
 def test_endpoint():
     return {"message": "테스트 엔드포인트 동작!"}
 
