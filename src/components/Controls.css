@@ -1,0 +1,50 @@
+/* Controls.css */
+.controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.btn-submit {
+    background: #4caf50;
+    color: white;
+}
+
+.btn-submit:hover:not(:disabled) {
+    background: #45a049;
+    transform: translateY(-2px);
+}
+
+.btn-hint {
+    background: #ff9800;
+    color: white;
+}
+
+.btn-hint:hover:not(:disabled) {
+    background: #f57c00;
+}
+
+.btn-reset {
+    background: #f44336;
+    color: white;
+}
+
+.btn-reset:hover {
+    background: #da190b;
+}

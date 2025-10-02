@@ -1,0 +1,31 @@
+/* AnswerArea.css */
+.answer-area {
+    background: #e8f5e9;
+    padding: 30px;
+    border-radius: 15px;
+    min-height: 150px;
+    margin-bottom: 20px;
+    border: 3px dashed #4caf50;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-area.empty {
+    justify-content: center;
+    align-items: center;
+}
+
+.answer-area .placeholder {
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+}
+
+.answer-area.drag-over {
+    background: #c8e6c9;
+    border-color: #2e7d32;
+    transform: scale(1.02);
+}

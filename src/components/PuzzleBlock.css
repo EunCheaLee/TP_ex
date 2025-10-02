@@ -1,0 +1,37 @@
+/* PuzzleBlock.css */
+.puzzle-block {
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: move; /* grab 커서로 변경 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    user-select: none;
+}
+
+.puzzle-block:active {
+    cursor: grabbing;
+    opacity: 0.7;
+    transform: scale(0.95);
+}
+
+.puzzle-block.source {
+    background: white;
+}
+
+.puzzle-block.source:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.puzzle-block.answer {
+    background: #4caf50;
+    color: white;
+    cursor: pointer; /* 클릭으로 제거 */
+}
+
+.puzzle-block.answer:hover {
+    background: #45a049;
+    transform: translateY(-2px);
+}
